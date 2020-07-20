@@ -1,18 +1,20 @@
 const express = require("express");
 const fs = require("fs");
-const router = express.Router();
+const path = require("path");
+const config = require("../config");
+const frontendPath = path.join(__dirname, config.frontendPath);
 
-const frontendPath = `${__dirname}/../../../html-website/`;
+const router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  // res.render('index', { title: 'Express' });
-  const homePage = fs.readFileSync(frontendPath + "public/index.html", "utf8");
-  console.log(frontendPath);
+  const homePage = fs.readFileSync(frontendPath + "index.html", "utf8");
   res.send(homePage);
 });
 
-/* Load CSS */
-router.use("/css", express.static(frontendPath + "public/css"));
+/* Load CSS, JS & node_modules */
+router.use("/css", express.static(frontendPath + "css"));
+router.use("/js", express.static(frontendPath + "js"));
+router.use("/node_modules", express.static(frontendPath + "node_modules"));
 
 module.exports = router;
