@@ -4,8 +4,14 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
+const config = require("./config");
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+
+const mongoose = require("mongoose");
+
+const url = config.mongoUrl;
 
 const connect = mongoose.connect(url, {
   useCreateIndex: true,
