@@ -29,4 +29,10 @@ router.get("/categories", function (req, res, next) {
   res.send(page);
 });
 
+/* Photo Credits */
+router.get("/photo_credits", function (req, res, next) {
+  const page = fs.readFileSync(frontendPath + "photo_credits.html", "utf8");
+  res.send(page);
+});
+
 module.exports = router;
