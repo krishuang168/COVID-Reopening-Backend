@@ -28,5 +28,3 @@ const EdmondsWA = [
     toGo: false,
   },
 ];
-
-exports.EdmondsWA;

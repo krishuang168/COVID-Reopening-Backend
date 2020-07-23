@@ -56,5 +56,3 @@ const BellevueWA = [
     toGo: true,
   },
 ];
-
-exports.BellevueWA;

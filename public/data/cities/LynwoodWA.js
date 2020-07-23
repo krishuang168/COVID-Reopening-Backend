@@ -14,5 +14,3 @@ const LynwoodWA = [
     toGo: true,
   },
 ];
-
-exports.LynwoodWA;

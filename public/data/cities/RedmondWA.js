@@ -28,5 +28,3 @@ const RedmondWA = [
     toGo: true,
   },
 ];
-
-exports.RedmondWA;
