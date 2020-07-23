@@ -25,18 +25,18 @@ router.post("/", (req, res, next) => {
   /* Check file existence, async way */
   fs.access(filePath, fs.F_OK, (err) => {
     if (err) {
-    //   console.error(err);
       return;
     }
     //file exists
   });
 
   try {
-    const fileContent = fs.readFileSync(filePath);
+    const fileContent = Buffer.from(fs.readFileSync(filePath), "base64");
+    console.log("After Buffer: " + fileContent);
 
     if (fileContent) {
       res.statusCode = 200;
-      res.json(fileContent);
+      res.send(`<body>${fileContent}</body>`);
     }
   } catch (err) {
     res.statusCode = 404;
