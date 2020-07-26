@@ -20,7 +20,7 @@ router.post("/", (req, res, next) => {
   const city = req.body.city;
   console.log(city.black.bgCyan);
 
-  const filePath = `${__dirname}/../public/data/cities/${req.body.city}WA.js`;
+  const filePath = `${__dirname}/../public/data/cities/${req.body.city}WA.json`;
 
   /* Check file existence, async way */
   fs.access(filePath, fs.F_OK, (err) => {

@@ -11,8 +11,8 @@
       "phone": "(425)672-7006",
       "tempStoreHours": "11:30AM - 9:00PM",
       "maps": "",
-      "DineIn": true,
-      "uberEats": true,
+      "dineIn": true,
+      "delivery": true,
       "toGo": true
     }
   ]
