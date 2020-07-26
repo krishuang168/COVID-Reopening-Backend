@@ -1,0 +1,61 @@
+{
+  "city": "Bellevue, WA",
+  "restaurants": [
+    {
+      "name": "Kizuki Ramen & Izakaya (Main St)",
+      "category": "Ramen",
+      "streetAddress": "14845 Main St",
+      "city": "Bellevue",
+      "state": "WA",
+      "zip": "98007",
+      "phone": "+14257777048",
+      "tempStoreHours": "11:00AM - 9:30PM",
+      "maps": "https://goo.gl/maps/D5zBR1L2PmY8a1qe9",
+      "DineIn": true,
+      "uberEats": true,
+      "toGo": true
+    },
+    {
+      "name": "Wingstop",
+      "category": "Chicken Wings",
+      "streetAddress": "14875 Main St",
+      "city": "Bellevue",
+      "state": "WA",
+      "zip": "98007",
+      "phone": "+14259741142",
+      "tempStoreHours": "11:00AM - 11:00PM",
+      "maps": "https://goo.gl/maps/cZNFExC3wobtkbrA7",
+      "DineIn": false,
+      "uberEats": true,
+      "toGo": true
+    },
+    {
+      "name": "HardWok Cafe",
+      "category": "Taiwanese",
+      "streetAddress": "667 156th Ave SE",
+      "city": "Bellevue",
+      "state": "WA",
+      "zip": "98007",
+      "phone": "+14255909058",
+      "tempStoreHours": "11:00AM - 9:30PM",
+      "maps": "https://g.page/HardwokCafeBellevue?share",
+      "DineIn": false,
+      "uberEats": false,
+      "toGo": true
+    },
+    {
+      "name": "Meet Fresh",
+      "category": "Dessert",
+      "streetAddress": "15552 Lake Hills Blvd f5",
+      "city": "Bellevue",
+      "state": "WA",
+      "zip": "98007",
+      "phone": "+14254498748",
+      "tempStoreHours": "1:00PM - 10:00PM",
+      "maps": "https://g.page/HardwokCafeBellevue?share",
+      "DineIn": false,
+      "uberEats": true,
+      "toGo": true
+    }
+  ]
+}
