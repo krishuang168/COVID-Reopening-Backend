@@ -1,0 +1,35 @@
+{
+  "city": "Snohomish, WA",
+  "restaurants": [
+    {
+      "name": "Maltby Cafe",
+      "category": "American",
+      "streetAddress": "8809 Maltby Rd",
+      "city": "Snohomish",
+      "state": "WA",
+      "zip": "98296",
+      "phone": "+14254833123",
+      "tempStoreHours": "7:00AM - 3:00PM",
+      "maps": "https://goo.gl/maps/Q8fYvaPZzbrpQaYt6",
+      "dineIn": true,
+      "delivery": false,
+      "toGo": true,
+      "verified": true
+    },
+    {
+      "name": "Trails End Taphouse & Restaurant",
+      "category": "American",
+      "streetAddress": "511 Maple Ave",
+      "city": "Snohomish",
+      "state": "WA",
+      "zip": "98290",
+      "phone": "+13605687233",
+      "tempStoreHours": "11:00AM - 9:00PM",
+      "maps": "https://goo.gl/maps/4NdYzexzbLhdELDH8",
+      "dineIn": true,
+      "delivery": true,
+      "toGo": true,
+      "verified": false
+    }
+  ]
+}
