@@ -27,6 +27,7 @@ router.get("/", function (req, res, next) {
 /* Load CSS, JS & node_modules */
 router.use("/css", express.static(frontendPath + "css"));
 router.use("/js", express.static(frontendPath + "js"));
+router.use("/images", express.static(frontendPath + "images"));
 router.use("/favicon.ico", express.static(frontendPath + "favicon_io/favicon.ico"));
 router.use("/node_modules", express.static(frontendPath + "node_modules"));
 
