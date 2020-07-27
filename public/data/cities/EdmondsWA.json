@@ -13,7 +13,8 @@
       "maps": "https://goo.gl/maps/LVFpTQtwRfNvhtCF6",
       "dineIn": true,
       "delivery": true,
-      "toGo": true
+      "toGo": true,
+      "verified": true
     },
     {
       "name": "Looking for Chai Taiwanese Kitchen",
@@ -27,7 +28,8 @@
       "maps": "https://goo.gl/maps/BrUYo8iQ1Kds12ia7",
       "dineIn": false,
       "delivery": false,
-      "toGo": false
+      "toGo": false,
+      "verified": true
     }
   ]
 }

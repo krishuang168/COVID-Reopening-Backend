@@ -12,8 +12,9 @@
       "tempStoreHours": "11:00AM - 9:30PM",
       "maps": "https://g.page/HardwokCafeBellevue?share",
       "dineIn": false,
-      "delivery": false,
-      "toGo": true
+      "delivery": true,
+      "toGo": true,
+      "verified": true
     },
     {
       "name": "Kizuki Ramen & Izakaya (Main St)",
@@ -27,7 +28,8 @@
       "maps": "https://goo.gl/maps/D5zBR1L2PmY8a1qe9",
       "dineIn": true,
       "delivery": true,
-      "toGo": true
+      "toGo": true,
+      "verified": false
     },
     {
       "name": "Meet Fresh",
@@ -41,7 +43,8 @@
       "maps": "https://g.page/HardwokCafeBellevue?share",
       "dineIn": false,
       "delivery": true,
-      "toGo": true
+      "toGo": true,
+      "verified": true
     },
     {
       "name": "Wingstop",
@@ -55,7 +58,8 @@
       "maps": "https://goo.gl/maps/cZNFExC3wobtkbrA7",
       "dineIn": false,
       "delivery": true,
-      "toGo": true
+      "toGo": true,
+      "verified": false
     }
   ]
 }

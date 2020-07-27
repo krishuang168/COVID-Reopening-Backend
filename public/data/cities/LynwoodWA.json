@@ -10,10 +10,11 @@
       "zip": "98036",
       "phone": "(425)672-7006",
       "tempStoreHours": "11:30AM - 9:00PM",
-      "maps": "",
+      "maps": "https://goo.gl/maps/GgBxqXF9RhGZrvj78",
       "dineIn": true,
       "delivery": true,
-      "toGo": true
+      "toGo": true,
+      "verified": true
     }
   ]
 }
