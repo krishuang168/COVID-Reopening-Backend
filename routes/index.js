@@ -53,23 +53,4 @@ router.get("/photo_credits", (req, res, next) => {
   res.send(page);
 });
 
-/* For Fetch API */
-const readContent = require("../readContent");
-
-router.get("/cities/*", (req, res, next) => {
-  const reqPath = req.path;
-  const resPath = `${__dirname}/../public/data${reqPath}.json`;
-  console.log(resPath.white.bgBlue);
-
-  try {
-    const content = readContent(resPath).toString();
-    console.log("After Buffer: ", content);
-    res.json(content);
-  } catch {
-    (err) => console.error(err);
-    res.statusCode = 404;
-    res.json(err);
-  }
-});
-
 module.exports = router;
