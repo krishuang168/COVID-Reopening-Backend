@@ -1,20 +1,6 @@
 {
   "city": "Woodinville, WA",
-  "restaurant": [
-    {
-      "name": "Vivi Pizzeria",
-      "category": "Italian",
-      "streetAddress": "14505 148th Ave NE",
-      "city": "Woodinville",
-      "state": "WA",
-      "zip": "98072",
-      "phone": "(425)408-0711",
-      "tempStoreHours": "11:00AM - 9:00PM",
-      "maps": "",
-      "dineIn": true,
-      "delivery": true,
-      "toGo": true
-    },
+  "restaurants": [
     {
       "name": "Village Wines",
       "category": "Italian",
@@ -24,6 +10,20 @@
       "zip": "98072",
       "phone": "(425)485-3536",
       "tempStoreHours": "12:00PM - 10:00PM",
+      "maps": "",
+      "dineIn": true,
+      "delivery": true,
+      "toGo": true
+    },
+    {
+      "name": "Vivi Pizzeria",
+      "category": "Italian",
+      "streetAddress": "14505 148th Ave NE",
+      "city": "Woodinville",
+      "state": "WA",
+      "zip": "98072",
+      "phone": "(425)408-0711",
+      "tempStoreHours": "11:00AM - 9:00PM",
       "maps": "",
       "dineIn": true,
       "delivery": true,
