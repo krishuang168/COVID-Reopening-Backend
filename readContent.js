@@ -1,12 +1,12 @@
 const fs = require("fs");
-const colors = require("colors");
+const colors = require("colors"); // For colorful console.log
 
 function readContent(filePath) {
   /* Check file existence, async way */
   fs.access(filePath, fs.F_OK, (err) => {
     if (err) {
       console.error(err);
-      throw err;
+      return err;
     }
     //file exists
   });
@@ -19,7 +19,8 @@ function readContent(filePath) {
       return fileContent;
     }
   } catch {
-    (err) => console.error(err);
+    const err = new Error(`Data Not Found`);
+    return err;
   }
 }
 
