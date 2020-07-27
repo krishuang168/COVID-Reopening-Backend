@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require("fs");
+const colors = require("colors");
 const path = require("path");
 const config = require("../config");
 const frontendPath = path.join(__dirname, config.frontendPath);
@@ -26,9 +27,8 @@ router.get("/", function (req, res, next) {
 /* Load CSS, JS & node_modules */
 router.use("/css", express.static(frontendPath + "css"));
 router.use("/js", express.static(frontendPath + "js"));
+router.use("/favicon.ico", express.static(frontendPath + "favicon_io/favicon.ico"));
 router.use("/node_modules", express.static(frontendPath + "node_modules"));
-
-
 
 /* By Category */
 router.get("/categories", function (req, res, next) {
@@ -48,7 +48,7 @@ router.get("/categories", function (req, res, next) {
 });
 
 /* Photo Credits */
-router.get("/photo_credits", function (req, res, next) {
+router.get("/photo_credits", (req, res, next) => {
   const page = fs.readFileSync(frontendPath + "photo_credits.html", "utf8");
   res.send(page);
 });
