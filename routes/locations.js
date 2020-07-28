@@ -1,22 +1,23 @@
+/* Import modules */
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const colors = require("colors");
 
-/* Config & Routers */
+/* Config */
 const config = require("../config");
 const frontendPath = path.join(__dirname, config.frontendPath);
-const SeattleAreaRouter = require("./SeattleArea");
 
+/* Routers */
 const router = express.Router();
+const SeattleAreaRouter = require("./SeattleArea");
+router.use("/SeattleArea", SeattleAreaRouter);
 
 /* Display location.html */
 router.get("/", (req, res, next) => {
   const page = fs.readFileSync(frontendPath + "locations.html", "utf8");
   res.send(page);
 });
-
-router.use("/SeattleArea", SeattleAreaRouter);
 
 /* HTML Form */
 router.post("/", (req, res, next) => {

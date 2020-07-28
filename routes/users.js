@@ -1,8 +1,18 @@
-var express = require("express");
-const User = require("../models/userModel");
+/* Import modules */
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
 const passport = require("passport");
 const authenticate = require("../authenticate");
 
+/* Mongoose Model */
+const User = require("../models/userModel");
+
+/* Config */
+const config = require("../config");
+const frontendPath = path.join(__dirname, config.frontendPath);
+
+/* Routers */
 const router = express.Router();
 
 /* GET users listing. */

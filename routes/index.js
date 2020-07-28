@@ -1,10 +1,14 @@
+/* Import modules */
 const express = require("express");
 const fs = require("fs");
-const colors = require("colors");
 const path = require("path");
+const colors = require("colors");
+
+/* Config */
 const config = require("../config");
 const frontendPath = path.join(__dirname, config.frontendPath);
 
+/* Routers */
 const router = express.Router();
 
 /* GET home page. */
