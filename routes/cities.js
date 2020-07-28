@@ -7,10 +7,10 @@ const readContent = require("../readContent");
 
 const router = express.Router();
 
-/* For Fetch API */
+/* Fetch restaurants using static JSON files */
 router.get("/*", (req, res, next) => {
   const reqPath = req.path;
-  const resPath = `${__dirname}/../public/data/cities${reqPath}.json`;
+  const resPath = `${__dirname}/../public/data/SMA${reqPath}.json`;
   console.log(resPath.white.bgBlue);
 
   const content = readContent(resPath).toString();
