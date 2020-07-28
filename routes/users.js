@@ -15,7 +15,7 @@ const frontendPath = path.join(__dirname, config.frontendPath);
 /* Routers */
 const router = express.Router();
 
-/* GET users listing. */
+/* Get user lists */
 router.get("/", authenticate.verifyUser, authenticate.verifyAdmin, (req, res, next) => {
   User.find()
     .then((users) => {
@@ -26,6 +26,14 @@ router.get("/", authenticate.verifyUser, authenticate.verifyAdmin, (req, res, ne
     .catch((err) => next(err));
 });
 
+/* Serve the signup page */
+router.get("/signup", (req, res) => {
+  const page = fs.readFileSync(frontendPath + "signup.html", "utf8");
+  res.statusCode = 200;
+  res.send(page);
+});
+
+/* Register */
 router.post("/signup", (req, res) => {
   User.register(new User({ username: req.body.username }), req.body.password, (err, user) => {
     if (err) {
