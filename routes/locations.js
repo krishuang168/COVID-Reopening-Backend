@@ -6,6 +6,7 @@ const colors = require("colors");
 /* Config & Routers */
 const config = require("../config");
 const frontendPath = path.join(__dirname, config.frontendPath);
+const SeattleAreaRouter = require("./SeattleArea");
 
 const router = express.Router();
 
@@ -15,7 +16,9 @@ router.get("/", (req, res, next) => {
   res.send(page);
 });
 
-/* Submit by City */
+router.use("/SeattleArea", SeattleAreaRouter);
+
+/* HTML Form */
 router.post("/", (req, res, next) => {
   const city = req.body.city;
   console.log(city.black.bgCyan);

@@ -2,15 +2,23 @@ const express = require("express");
 const fs = require("fs");
 const colors = require("colors");
 const path = require("path");
-const config = require("../config");
 const readContent = require("../readContent");
 
+/* Config & Routers */
+const config = require("../config");
+const frontendPath = path.join(__dirname, config.frontendPath);
 const router = express.Router();
+
+/* Display Seattle Metropolitan Area */
+router.get("/", (req, res, next) => {
+  const page = fs.readFileSync(frontendPath + "locations/SeattleArea.html", "utf8");
+  res.send(page);
+});
 
 /* Fetch restaurants using static JSON files */
 router.get("/*", (req, res, next) => {
   const reqPath = req.path;
-  const resPath = `${__dirname}/../public/data/SMA${reqPath}.json`;
+  const resPath = `${__dirname}/../public/data/SeattleArea${reqPath}.json`;
   console.log(resPath.white.bgBlue);
 
   const content = readContent(resPath).toString();
