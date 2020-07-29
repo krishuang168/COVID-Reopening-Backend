@@ -38,8 +38,11 @@ router.post("/signup", (req, res) => {
   User.register(new User({ username: req.body.username }), req.body.password, (err, user) => {
     if (err) {
       res.statusCode = 500;
-      res.setHeader("Content-Type", "application/json");
-      res.json({ err: err });
+      res.setHeader("Content-Type", "text/html");
+      res.end(`<h1>This username has been registered!</h1>
+      <h2>Try another username, please.<h2>
+      <button onclick="go_back()">Go back</button>
+      <script>function go_back(){history.back();}</script>`);
     } else {
       if (req.body.firstname) {
         user.firstname = req.body.firstname;
@@ -56,8 +59,10 @@ router.post("/signup", (req, res) => {
         }
         passport.authenticate("local")(req, res, () => {
           res.statusCode = 200;
-          res.setHeader("Content-Type", "application/json");
-          res.json({ success: true, status: "Registration Successful!" });
+          res.setHeader("Content-Type", "text/html");
+          res.end(`<h1>Registration Successful!</h1>
+                  <button onclick="go_home()">Home</button>
+                  <script>function go_home(){window.location="/";}</script>`);
         });
       });
     }
@@ -65,30 +70,6 @@ router.post("/signup", (req, res) => {
 });
 
 router.post("/login", passport.authenticate("local"), (req, res) => {
-  const token = authenticate.getToken({ _id: req.user._id });
-
-  console.log("***: " + JSON.stringify(Object.keys(req)));
-  console.log("req.body: " + JSON.stringify(req.body));
-  console.log("req.user: " + JSON.stringify(req.user));
-
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "application/json");
-  res.json(
-    req.user.admin
-      ? {
-          success: true,
-          token: token,
-          status: "Welcome back, Admin!", // A different welcome message for Admin login
-        }
-      : {
-          success: true,
-          token: token,
-          status: "You are successfully logged in!",
-        }
-  );
-});
-
-router.post("/", (req, res) => {
   const token = authenticate.getToken({ _id: req.user._id });
 
   console.log("***: " + JSON.stringify(Object.keys(req)));
