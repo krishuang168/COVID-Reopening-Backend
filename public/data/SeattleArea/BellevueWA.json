@@ -3,7 +3,7 @@
   "restaurants": [
     {
       "name": "HardWok Cafe",
-      "category": "Taiwanese",
+      "category": ["Taiwanese"],
       "streetAddress": "667 156th Ave SE",
       "city": "Bellevue",
       "state": "WA",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Kizuki Ramen & Izakaya (Main St)",
-      "category": "Ramen",
+      "category": ["Ramen", "Japanese"],
       "streetAddress": "14845 Main St",
       "city": "Bellevue",
       "state": "WA",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Meet Fresh",
-      "category": "Dessert, Taiwanese",
+      "category": ["Dessert", "Taiwanese"],
       "streetAddress": "15552 Lake Hills Blvd f5",
       "city": "Bellevue",
       "state": "WA",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Wingstop",
-      "category": "Chicken Wings",
+      "category": ["Chicken Wings", "American"],
       "streetAddress": "14875 Main St",
       "city": "Bellevue",
       "state": "WA",

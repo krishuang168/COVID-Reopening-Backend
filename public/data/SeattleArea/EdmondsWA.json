@@ -3,7 +3,7 @@
   "restaurants": [
     {
       "name": "BlackBall Taiwanese Dessert",
-      "category": "Dessert, Taiwanese",
+      "category": ["Dessert", "Taiwanese"],
       "streetAddress": "22001 Hwy 99 Foyer",
       "city": "Edmonds",
       "state": "WA",
@@ -17,8 +17,23 @@
       "verified": true
     },
     {
+      "name": "Boiling Point",
+      "category": ["Hot Pot", "Taiwanese"],
+      "streetAddress": "22001 Hwy 99 #100",
+      "city": "Edmonds",
+      "state": "WA",
+      "zip": "98026",
+      "phone": "+14256737101",
+      "tempStoreHours": "11:00AM - 9:00PM",
+      "maps": "https://goo.gl/maps/JUwDZn1rzx6f7DXv6",
+      "dineIn": false,
+      "delivery": true,
+      "toGo": true,
+      "verified": true
+    },
+    {
       "name": "Looking for Chai Taiwanese Kitchen",
-      "category": "Taiwanese",
+      "category": ["Taiwanese"],
       "streetAddress": "22511 Hwy 99 Suite 100",
       "city": "Edmonds",
       "state": "WA",

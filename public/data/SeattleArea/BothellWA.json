@@ -3,7 +3,7 @@
   "restaurants": [
     {
       "name": "Applebee's Grill + Bar",
-      "category": "American",
+      "category": ["American"],
       "streetAddress": "22916 Bothell Everett Hwy",
       "city": "Bothell",
       "state": "WA",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Namasthe Indian Restaurant",
-      "category": "Indian",
+      "category": ["Indian"],
       "streetAddress": "22910 Bothell Everett Hwy",
       "city": "Bothell",
       "state": "WA",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Outback Steakhouse",
-      "category": "Steak house",
+      "category": ["Steak house", "Australian"],
       "streetAddress": "22606 Bothell Everett Hwy",
       "city": "Bothell",
       "state": "WA",
@@ -42,6 +42,21 @@
       "tempStoreHours": "4:00PM - 9:00PM",
       "maps": "https://goo.gl/maps/7tgaT8fhqV5MPVKD9",
       "dineIn": true,
+      "delivery": true,
+      "toGo": true,
+      "verified": true
+    },
+    {
+      "name": "Sushi Zone",
+      "category": ["Japanese"],
+      "streetAddress": "10024 Main St",
+      "city": "Bothell",
+      "state": "WA",
+      "zip": "98011",
+      "phone": "+14254029988",
+      "tempStoreHours": "",
+      "maps": "https://goo.gl/maps/CErwXwjnxybuXjDS8",
+      "dineIn": false,
       "delivery": true,
       "toGo": true,
       "verified": true

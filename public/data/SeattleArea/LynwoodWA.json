@@ -3,7 +3,7 @@
   "restaurants": [
     {
       "name": "Old Spaghetti Factory",
-      "category": "Italian",
+      "category": ["Italian"],
       "streetAddress": "2509 196th St SW",
       "city": "Lynnwood",
       "state": "WA",

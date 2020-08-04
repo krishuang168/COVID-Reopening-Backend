@@ -3,7 +3,7 @@
   "restaurants": [
     {
       "name": "Boiling Point",
-      "category": "Hot Pot, Taiwanese",
+      "category": ["Hot Pot", "Taiwanese"],
       "streetAddress": "16118 NE 87th St, Redmond, WA 98052",
       "city": "Redmond",
       "state": "WA",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Haiku Sushi & Seafood Buffet",
-      "category": "Buffet",
+      "category": ["Buffet"],
       "streetAddress": "7548 164th Ave NE",
       "city": "Redmond",
       "state": "WA",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Mayuri Indian Cuisine",
-      "category": "Indian",
+      "category": ["Indian"],
       "streetAddress": "2115 Bel-Red Rd",
       "city": "Redmond",
       "state": "WA",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Silver Spoon Thai Restaurant",
-      "category": "Thai",
+      "category": ["Thai"],
       "streetAddress": "23525 NE Novelty Hill Rd suite a-119",
       "city": "Redmond",
       "state": "WA",

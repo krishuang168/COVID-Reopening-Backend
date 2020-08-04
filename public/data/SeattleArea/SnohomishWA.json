@@ -3,7 +3,7 @@
   "restaurants": [
     {
       "name": "Maltby Cafe",
-      "category": "American",
+      "category": ["American"],
       "streetAddress": "8809 Maltby Rd",
       "city": "Snohomish",
       "state": "WA",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Trails End Taphouse & Restaurant",
-      "category": "American",
+      "category": ["American"],
       "streetAddress": "511 Maple Ave",
       "city": "Snohomish",
       "state": "WA",
