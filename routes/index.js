@@ -29,6 +29,7 @@ router.get("/", function (req, res, next) {
 });
 
 /* Load CSS, JS & node_modules */
+router.use("/html", express.static(frontendPath + "html"));
 router.use("/css", express.static(frontendPath + "css"));
 router.use("/js", express.static(frontendPath + "js"));
 router.use("/images", express.static(frontendPath + "images"));
